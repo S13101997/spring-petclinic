@@ -5,7 +5,7 @@ pipeline {
   	stage('Maven Install') {
     	agent {
       	docker {
-        	image 'maven:ibmjava'
+        	image 'maven:3.9.0-eclipse-temurin-8-alpine'
         }
       }
       steps {
