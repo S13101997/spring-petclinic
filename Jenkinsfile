@@ -5,7 +5,7 @@ pipeline {
   	stage('Maven Install') {
     	agent {
       	docker {
-        	image 'pgoudreau/docker-maven-node:latest'
+        	image 'maven:ibmjava'
         }
       }
       steps {
