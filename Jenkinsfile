@@ -5,7 +5,7 @@ pipeline {
   	stage('Maven Install') {
     	agent {
       	docker {
-        	image 'maven:3.5.0'
+        	image 'pgoudreau/docker-maven-node:latest'
         }
       }
       steps {
