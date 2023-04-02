@@ -5,7 +5,7 @@ pipeline {
   	stage('Maven Install') {
     	agent {
       	docker {
-        	image 'nulldriver/maven-resource:2.0.0-rc.18'
+        	image 'maven:3.5.0'
         }
       }
       steps {
